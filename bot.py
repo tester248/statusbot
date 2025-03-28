@@ -190,6 +190,6 @@ async def kick(ctx, member : discord.Member, arg):
         await ctx.send("bot does not have the kick members permission!")
 
 
-client.run("ODgwMDk4MjgwMzM0MzA3Mzc5.GTIsqB.9G5icVhVMYlTGuhai0h_seXp1s9IrQPkC9yNwM") #get your bot token and create a key named `TOKEN` to the secrets panel then paste your bot token as the value. 
+client.run("TOKEN") #get your bot token and create a key named `TOKEN` to the secrets panel then paste your bot token as the value. 
 #to keep your bot from shutting down use https://uptimerobot.com then create a https:// monitor and put the link to the website that appewars when you run this repl in the monitor and it will keep your bot alive by pinging the flask server
 #enjoy!
