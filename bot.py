@@ -36,9 +36,6 @@ class MinecraftStatus(commands.Bot):
         # Add cogs here later if needed
         print("Bot is setting up...")
 
-    async def start(self):
-        await super().start(os.getenv('TOKEN'))
-
 class MinecraftServerModal(discord.ui.Modal, title="Minecraft Server Status"):
     servername = discord.ui.TextInput(
         label="Server Name",
@@ -161,6 +158,6 @@ async def ping(interaction: discord.Interaction):
     await interaction.response.send_message("🏓 Pong!")
 
 if __name__ == "__main__":
-    bot.start()
+    bot.run(os.getenv('TOKEN'))
 #to keep your bot from shutting down use https://uptimerobot.com then create a https:// monitor and put the link to the website that appewars when you run this repl in the monitor and it will keep your bot alive by pinging the flask server
 #enjoy!
